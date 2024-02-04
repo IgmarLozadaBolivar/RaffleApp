@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raffinity</title>
+    <link rel="stylesheet" href="../styles/auth.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/3d-fluency/94/two-tickets--v.png" type="image/x-icon">
+    <script type="module" src="../scripts/script.js"></script>
+    <script defer src="http://falconmasters.com/demos/particulas/particles.min.js"></script>
+    <script defer src="http://falconmasters.com/demos/particulas/particulas.js"></script>
 </head>
-<body>
-    
+
+<body id="particles-js">
+    <nav class="nav">
+        <div class="logo">
+            <img class="logo" src="../assets/logo.png" alt="">
+        </div>
+        <div class="btn">
+            <a href="../home.html" id="btn-open" class="btn-open">
+                Volver
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="form-box">
+        <div class="form-value">
+            <form action="">
+                <h3>Entra a tu cuenta</h3>
+                <p>Ingresa tus datos para validar</p>
+                <div class="inputbox">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <input type="tel" id="user_number" name="user_number" required maxlength="12"
+                    pattern="\d{3} \d{3} \d{4}"/>
+                    <label for="">Telefono</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="key-outline"></ion-icon>
+                    <input id="password" type="password" required>
+                    <label for="">Contraseña</label>
+                </div>
+                <button id="boton">Iniciar sesión</button>
+                <div class="more">
+                    <p>No tienes una cuenta? <a href="#">Clic aquí</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
