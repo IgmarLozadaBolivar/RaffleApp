@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: linear-gradient(#e0325b, #f5831d);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -10;
+}
+
+.nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #ffff;
+}
+
+.logo {
+    margin-top: 7px;
+    margin-left: 7%;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+    margin-left: 67%;
+    transition: all 0.6s ease;
+}
+
+.btn-open {
+    background: transparent;
+    padding: 8px 36px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 6px;
+}
+
+.btn-open:hover {
+    background: transparent;
+    box-shadow: 0 0 10px #f5831d;
+    border-color: #ff0055;
+    transition: all 0.6s ease;
+}
+
+.btn-open span:nth-child(n) {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.6s ease;
+}
+
+.btn-open span:nth-child(1) {
+    right: 7%;
+    top: 15%;
+    border: 2px solid #ff0055;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.btn-open span:nth-child(2) {
+    left: 87%;
+    bottom: 15%;
+    border: 2px solid #f5831d;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.btn-open:hover span:nth-child(1) {
+    right: 12%;
+    transition: rotate(90deg);
+    color: #ff0055;
+    background-color: #ff0055;
+}
+
+.btn-open:hover span:nth-child(2) {
+    left: 93%;
+    transition: rotate(90deg);
+    color: #ff0055;
+    background-color: #f5831d;
+}
+
+.form-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.462);
+}
+
+.form-value {
+    padding: 20px;
+    color: #000;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+    padding: 3px;
+    font-family: 'Manrope', sans-serif;
+}
+
+p {
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    width: 270px;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -10px;
+    font-size: 0.9em;
+}
+
+.form-box input[type="tel"] {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+}
+
+.form-box input[type="password"] {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #000;
+    font-size: 1.2em;
+    top: 12px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4691A4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton:hover {
+    color: #fff;
+    background-color: #3f7988;
+}
+
+.more {
+    font-size: 14px;
+    margin: 20px 0 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.more p a {
+    color: #000;
+    text-decoration: none;
+}
+
+.more p a:hover {
+    color: #000;
+    text-decoration: underline #f5831d;
+}
